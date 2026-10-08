@@ -1,0 +1,132 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[
+{"Computation"," ","of"," ","the"," ","2"}],"-",RowBox[{"cocycle"," ","invariant"," ","for"," ","the"," ","Hopf"," ","Link"}]}]," ","*)"}],"\n","\n",RowBox[
+{"(*",RowBox[{"Set"," ","of"," ","elements"," ","in"," ","our"," ","quandle"," ","set"," ",RowBox[
+{"Z3","[","t","]"}]," ","mod"," ",RowBox[{"(",RowBox[{RowBox[{"t","^","2"}]," ","+"," ","1"}],")"}]}]," ","*)"}],"\n",RowBox[
+{RowBox[{"coloringSet","=",RowBox[{"{",RowBox[{"0",",","1",",","2",",","t",",",RowBox[
+{"2","t"}],",",RowBox[{"1","+","t"}],",",RowBox[{"1","+",RowBox[{"2","t"}]}],",",RowBox[
+{"2","+","t"}],",",RowBox[{"2","+",RowBox[{"2","t"}]}]}],"}"}]}],";"}]}],RowBox[{"\n","\n"}],RowBox[
+{RowBox[{"(*"," ",RowBox[{"Function"," ","that"," ","creates"," ","creates"," ","a"," ","list"," ","of"," ","all"," ","possible"," ","coloring"," ","configurations"}]," ","*)"}],"\n","\"All possible colorings\""}],"\n",RowBox[
+{"possibleColorings","=",RowBox[{"Tuples","[",RowBox[{"coloringSet",",",RowBox[{"{","4","}"}]}],"]"}]}],RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"(*"," ",RowBox[{"Initializes"," ","the"," ","list"," ","that"," ","all"," ","the"," ","valid"," ",RowBox[
+{"colorings"," ","--"}]," ","the"," ","homomorphism"," ",RowBox[{"set"," ","--"}]," ","will"," ","be"," ","appended"," ","to"," ","and"," ","the"," ","homCount"," ","that"," ","will"," ","store"," ","the"," ","cardinality"," ","of"," ","the"," ","homomorphism"," ",RowBox[
+{"set","."}]}]," ","*)"}],"\n",RowBox[{RowBox[{"validColorings","=",RowBox[{"{","}"}]}],";"}]}],"\n",RowBox[
+{RowBox[{"homCount","=","0"}],";"}],RowBox[{"\n","\n"}],RowBox[{RowBox[{"(*"," ",RowBox[
+{"COMPUTATION"," ","OF"," ","THE"," ","HOMOMORPHISM"," ","SET"}]," ","*)"}],"\n",RowBox[
+{"(*",RowBox[{RowBox[{RowBox[{" ",RowBox[{RowBox[{"If"," ","the"," ","quandle"," ","crossing"," ","relations"," ","hold"," ","true"," ","for"," ","a"," ","specific"," ","coloring"," ","permutation"}],","," ",RowBox[
+{"that"," ","is"," ","if"," ","x"}]}]," ","|>"}]," ","y"," ","does"," ","indeed"," ","equal"," ","the"," ","coloring"," ","of"," ",RowBox[
+{RowBox[{RowBox[{"a1","/","2"}],"/","3"}],"/","4"}]," ","at"," ","a"," ","crossing"}],","," ",RowBox[
+{"then"," ","the"," ","specific"," ","coloring"," ","configuration"," ","is"," ","considered"," ","valid"," ","and"," ","appended"," ","to"," ","the"," ","validColorings"," ","list"," ","and"," ","the"," ","homomorphism"," ","count"," ","increases"," ","by"," ","one"}]}]," ","*)"}],"\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","1"}],",","\n",RowBox[{"i","\[LessEqual]",RowBox[
+{"Length","[","possibleColorings","]"}]}],",","\n",RowBox[{"i","=",RowBox[{"i","+","1"}]}],",","\n",RowBox[
+{RowBox[{"a1","=",RowBox[{"possibleColorings","[",RowBox[{"[",RowBox[{"i",",","1"}],"]"}],"]"}]}],";","  ",RowBox[
+{"a2","=",RowBox[{"possibleColorings","[",RowBox[{"[",RowBox[{"i",",","2"}],"]"}],"]"}]}],";",RowBox[
+{"a3","=",RowBox[{"possibleColorings","[",RowBox[{"[",RowBox[{"i",",","3"}],"]"}],"]"}]}],";",RowBox[
+{"a4","=",RowBox[{"possibleColorings","[",RowBox[{"[",RowBox[{"i",",","4"}],"]"}],"]"}]}],";","\n",RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"Simplify","[",RowBox[{"a3","==",RowBox[{"PolynomialRemainder","[",RowBox[
+{RowBox[{RowBox[{"t","*","a2"}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*","a1"}]}],",",RowBox[
+{RowBox[{"t","^","2"}]," ","+","1"}],",","t",",",RowBox[{"Modulus","\[Rule]","3"}]}],"]"}]}],"]"}],"&&"," ",RowBox[
+{"Simplify","[",RowBox[{"a2","==",RowBox[{"PolynomialRemainder","[",RowBox[{RowBox[
+{RowBox[{"t","*","a3"}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*","a4"}]}],",",RowBox[
+{RowBox[{"t","^","2"}]," ","+","1"}],","," ","t",","," ",RowBox[{"Modulus","\[Rule]","3"}]}],"]"}]}],"]"}]," ","&&"," ",RowBox[
+{"Simplify","[",RowBox[{"a1","==",RowBox[{"PolynomialRemainder","[",RowBox[{RowBox[
+{RowBox[{"t","*","a1"}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*","a3"}]}],",",RowBox[
+{RowBox[{"t","^","2"}]," ","+","1"}],",","t",",",RowBox[{"Modulus","\[Rule]","3"}]}],"]"}]}],"]"}]," ","&&"," ",RowBox[
+{"Simplify","[",RowBox[{"a4","==",RowBox[{"PolynomialRemainder","[",RowBox[{RowBox[
+{RowBox[{"t","*","a4"}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*","a3"}]}],",",RowBox[
+{RowBox[{"t","^","2"}],"+","1"}],","," ","t",",",RowBox[{"Modulus"," ","\[Rule]","3"}]}],"]"}]}],"]"}]}],",","\n",RowBox[
+{RowBox[{"homCount","=",RowBox[{"homCount","+","1"}]}]," ",";","\n",RowBox[{"AppendTo","[",RowBox[
+{"validColorings",",",RowBox[{"{",RowBox[{"a1",",","a2",",","a3",",","a4"}],"}"}]}],"]"}]}]}],"\n","]"}],";"}]}],"\n","]"}],";"}]}],RowBox[
+{"\n","\n"}],"\"The cardinality of the homomorphism set\"","\n","homCount",RowBox[
+{"\n","\n"}],"\"The set of valid colorings - the homomorphism set\"","\n","validColorings",RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"(*",RowBox[{"Function"," ","that"," ","calculates"," ","the"," ","Boltzmann"," ","Weights"," ","at"," ","a"," ","crossing"," ","with"," ","strands"," ","x"," ","and"," ","y"}],"*)"}],"\n",RowBox[
+{RowBox[{RowBox[{"boltz","[",RowBox[{"a_",",","b_"}],"]"}],":=",RowBox[{RowBox[{RowBox[
+{"(",RowBox[{"a","-","b"}],")"}],"^","3"}],"*","b"}]}],";"}]}],"\n",RowBox[{RowBox[
+{"(*"," ",RowBox[{"Calculates"," ","the"," ","formal"," ","multiplication"," ","for"," ","a"," ","specific"," ","coloring"," ","configuration"," ","over"," ","all"," ","crossings"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"formalMult","=","0"}],";"}]}],"\n",RowBox[{RowBox[{"crossing1Boltz","=","0"}],";"}],"\n",RowBox[
+{RowBox[{"crossing2Boltz","=","0"}],";"}],"\n",RowBox[{RowBox[{"crossing3Boltz","=","0"}],";"}],"\n",RowBox[
+{RowBox[{"crossing4Boltz","=","0"}],";"}],"\n",RowBox[{RowBox[{"stateSum","=","0"}],";"}],"\n",RowBox[
+{RowBox[{"For","[",RowBox[{RowBox[{"i","=","1"}],",",RowBox[{"i","\[LessEqual]",RowBox[
+{"Length","[","validColorings","]"}]}],",",RowBox[{"i","=",RowBox[{"i","+","1"}]}],",",RowBox[
+{RowBox[{"a1","=",RowBox[{"validColorings","[",RowBox[{"[",RowBox[{"i",",","1"}],"]"}],"]"}]}],";",RowBox[
+{"a2","=",RowBox[{"validColorings","[",RowBox[{"[",RowBox[{"i",",","2"}],"]"}],"]"}]}],";",RowBox[
+{"a3","=",RowBox[{"validColorings","[",RowBox[{"[",RowBox[{"i",",","3"}],"]"}],"]"}]}],";",RowBox[
+{"a4","=",RowBox[{"validColorings","[",RowBox[{"[",RowBox[{"i",",","4"}],"]"}],"]"}]}],";","\n",RowBox[
+{"crossing1Boltz","=",RowBox[{RowBox[{"(",RowBox[{"-","1"}],")"}],"*",RowBox[{"boltz","[",RowBox[
+{"a2",",","a1"}],"]"}]}]}],";","\n",RowBox[{"crossing2Boltz","=",RowBox[{RowBox[{"(",RowBox[
+{"-","1"}],")"}],"*",RowBox[{"boltz","[",RowBox[{"a3",",","a4"}],"]"}]}]}],";","\n",RowBox[
+{"crossing3Boltz","=",RowBox[{RowBox[{"(",RowBox[{"-","1"}],")"}],"*",RowBox[{"boltz","[",RowBox[
+{"a4",",","a3"}],"]"}]}]}],";","\n",RowBox[{"crossing4Boltz","=",RowBox[{RowBox[{"(",RowBox[
+{"-","1"}],")"}],"*",RowBox[{"boltz","[",RowBox[{"a1",",","a3"}],"]"}]}]}],";","\n",RowBox[
+{"formalMult"," ","="," ",RowBox[{"crossing1Boltz","*","crossing2Boltz","*","crossing3Boltz","*","crossing4Boltz"}]}],";","\n",RowBox[
+{"stateSum","=",RowBox[{"stateSum","+","formalMult"}]}],";"}]}],"\n","]"}],";"}],"\n","\"The Quandle 2-Cocycle Invariant\"","\n","stateSum"}],
+"Input",CellLabel -> "In[78]:= ",ExpressionUUID -> "a04e1024-20cb-437b-82cb-118139ef6101"],Cell[
+BoxData[
+"\"All possible colorings\"",StandardForm],"Output",CellLabel -> "Out[79]= ",ExpressionUUID -> "d977fc48-1e6e-4e34-9aad-c30b6496b8d2"],Cell[
+BoxData[
+TemplateBox[Association["shortenedBoxes" -> TagBox[RowBox[{"{",RowBox[{RowBox[{"{",RowBox[
+{"0",",","0",",","0",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",","1"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","0",",","2"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",","t"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","0",",",RowBox[{"2"," ","t"}]}],"}"}],",",RowBox[{"{",RowBox[
+{"0",",","0",",","0",",",RowBox[{"1","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",",RowBox[
+{"1","+",RowBox[{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",",RowBox[
+{"2","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","0",",",RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","1",",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","1",",","1"}],"}"}],",",RowBox[{"{",RowBox[{"0",",","0",",","1",",","2"}],"}"}],",",RowBox[
+{"{",RowBox[{"0",",","0",",","1",",","t"}],"}"}],",",TemplateBox[{"6536"},"OutputSizeLimit`Skeleton"],",",RowBox[
+{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+","t"}],",",RowBox[{"1","+",RowBox[{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[
+{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+","t"}],",",RowBox[{"2","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+","t"}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",","0"}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",","1"}],"}"}],",",RowBox[
+{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",","2"}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",","t"}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2"," ","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"1","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"1","+",RowBox[{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"2","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}]}],"}"}]}],"}"}],
+Function[Short[Slot[1],8]]],"line" -> 80,"sessionID" -> 27943074927348082973,"byteCount" -> 2135272,
+"size" -> 8,"stored" -> False,"expr" -> Missing["NotAvailable","NewSessionID"],"wrap" -> OutputSizeLimit`Defer,
+"version" -> 1],"OutputSizeLimitTemplate"]],"Output",CellLabel -> "Out[80]= ",ExpressionUUID -> "ac62da29-bf4c-4599-be6a-0f6616df9744"],Cell[
+BoxData[
+"\"The cardinality of the homomorphism set\"",StandardForm],"Output",CellLabel -> "Out[84]= ",
+ExpressionUUID -> "31c3f089-00f9-461a-9e22-cd52ccd6721e"],Cell[
+BoxData["9",StandardForm],
+"Output",CellLabel -> "Out[85]= ",ExpressionUUID -> "b9413bbc-9aeb-467f-a629-0b59001a51f1"],Cell[
+BoxData[
+"\"The set of valid colorings - the homomorphism set\"",StandardForm],"Output",CellLabel -> "Out[86]= ",
+ExpressionUUID -> "b8e7b822-08fa-43c7-b0dd-4f306ca791df"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{RowBox[{"{",RowBox[{"0",",","0",",","0",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"1",",","1",",","1",",","1"}],"}"}],",",RowBox[
+{"{",RowBox[{"2",",","2",",","2",",","2"}],"}"}],",",RowBox[{"{",RowBox[{"t",",","t",",","t",",","t"}],"}"}],",",RowBox[
+{"{",RowBox[{RowBox[{"2"," ","t"}],",",RowBox[{"2"," ","t"}],",",RowBox[{"2"," ","t"}],",",RowBox[
+{"2"," ","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"1","+","t"}],",",RowBox[{"1","+","t"}],",",RowBox[
+{"1","+","t"}],",",RowBox[{"1","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"1","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"1","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"1","+",RowBox[
+{"2"," ","t"}]}],",",RowBox[{"1","+",RowBox[{"2"," ","t"}]}]}],"}"}],",",RowBox[{"{",RowBox[
+{RowBox[{"2","+","t"}],",",RowBox[{"2","+","t"}],",",RowBox[{"2","+","t"}],",",RowBox[
+{"2","+","t"}]}],"}"}],",",RowBox[{"{",RowBox[{RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[{"2","+",RowBox[{"2"," ","t"}]}],",",RowBox[
+{"2","+",RowBox[{"2"," ","t"}]}]}],"}"}]}],"}"}],StandardForm],"Output",CellLabel -> "Out[87]= ",
+ExpressionUUID -> "7cbd117a-3990-40fe-b9ef-6e797ece8221"],Cell[
+BoxData["\"The Quandle 2-Cocycle Invariant\"",
+StandardForm],"Output",CellLabel -> "Out[96]= ",ExpressionUUID -> "6c59e0a7-2c2f-4ea9-b7e6-ed154004a888"],Cell[
+BoxData[
+"0",StandardForm],"Output",CellLabel -> "Out[97]= ",ExpressionUUID -> "617e2da9-5078-4c51-a1c3-1ac5513ccb1b"]},
+Open],ExpressionUUID -> "9cdc4e5f-55f2-40ca-a49f-446248bbbca7"],Cell[
+BoxData[""],
+"Input",ExpressionUUID -> "4fcc9624-a4e8-48ef-be3c-3c555bd112c5"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "15. for Wolfram Cloud 1.77.1 (August 27, 2026)"]
