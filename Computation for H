@@ -1,0 +1,50 @@
+(* Computation of the 2-cocycle invariant for the Hopf Link *)
+
+(*Set of elements in our quandle set Z3[t] mod (t^2 + 1) *)
+coloringSet={0,1,2,t,2t,1+t,1+2t,2+t,2+2t};
+
+(* Function that creates creates a list of all possible coloring configurations *)
+"All possible colorings"
+possibleColorings=Tuples[coloringSet,{4}]
+
+(* Initializes the list that all the valid colorings -- the homomorphism set -- will be appended to and the homCount that will store the cardinality of the homomorphism set. *)
+validColorings={};
+homCount=0;
+
+(* COMPUTATION OF THE HOMOMORPHISM SET *)
+(* If the quandle crossing relations hold true for a specific coloring permutation, that is if x |> y does indeed equal the coloring of a1/2/3/4 at a crossing, then the specific coloring configuration is considered valid and appended to the validColorings list and the homomorphism count increases by one *)
+For[i=1,
+i<=Length[possibleColorings],
+i=i+1,
+a1=possibleColorings[[i,1]];  a2=possibleColorings[[i,2]];a3=possibleColorings[[i,3]];a4=possibleColorings[[i,4]];
+If[Simplify[a3==PolynomialRemainder[t*a2+(1-t)*a1,t^2 +1,t,Modulus->3]]&& Simplify[a2==PolynomialRemainder[t*a3+(1-t)*a4,t^2 +1, t, Modulus->3]] && Simplify[a1==PolynomialRemainder[t*a1+(1-t)*a3,t^2 +1,t,Modulus->3]] && Simplify[a4==PolynomialRemainder[t*a4+(1-t)*a3,t^2+1, t,Modulus ->3]],
+homCount=homCount+1 ;
+AppendTo[validColorings,{a1,a2,a3,a4}]
+];
+];
+
+"The cardinality of the homomorphism set"
+homCount
+
+"The set of valid colorings - the homomorphism set"
+validColorings
+
+(*Function that calculates the Boltzmann Weights at a crossing with strands x and y*)
+boltz[a_,b_]:=(a-b)^3*b;
+(* Calculates the formal multiplication for a specific coloring configuration over all crossings *)
+formalMult=0;
+crossing1Boltz=0;
+crossing2Boltz=0;
+crossing3Boltz=0;
+crossing4Boltz=0;
+stateSum=0;
+For[i=1,i<=Length[validColorings],i=i+1,a1=validColorings[[i,1]];a2=validColorings[[i,2]];a3=validColorings[[i,3]];a4=validColorings[[i,4]];
+crossing1Boltz=(-1)*boltz[a2,a1];
+crossing2Boltz=(-1)*boltz[a3,a4];
+crossing3Boltz=(-1)*boltz[a4,a3];
+crossing4Boltz=(-1)*boltz[a1,a3];
+formalMult = crossing1Boltz*crossing2Boltz*crossing3Boltz*crossing4Boltz;
+stateSum=stateSum+formalMult;
+];
+"The Quandle 2-Cocycle Invariant"
+stateSum
