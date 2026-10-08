@@ -1,0 +1,43 @@
+ClearAll["Global`*"];
+
+QuandleSet={0,1,2,t,2t,t+1,t+2,2t+1,2t+2}
+possibleColoringsAtCrossing=Tuples[QuandleSet,{3}]
+
+$RecursionLimit=1024;
+$OutputSizeLimit = 100000;
+(*Do[ToExpression[ "validColorings" <> ToString[i], InputForm, Function[x, x = {}] ], {i, 1, 45} ] *)
+Do[ToExpression["validColorings" <> ToString[i] <> " = {}"], {i, 1, 45}];
+
+runningColoringTally={};
+runningColoringTally2={};
+runningColoringTally3={};
+
+crossTriples = {
+{a2, a1, a16}, {a16,a17,a1}, {a3,a6,a1}, {a1, a2, a3}, {a6,a5,a3}, {a5,a4,a7},{a45,a7,a4},{a26,a27,a4},{a4,a3,a26},{a44,a45,a7},{a7,a8,a44},{a43,a44,a8},{a8,a9,a43},{a42,a43,a9},{a9,a10,a42},{a38,a39,a42},{a39,a40,a10},{a13,a14,a42},{a12,a13,a10},{a41,a42,a14},{a10,a11,a14},{a40,a41,a38},{a11,a12,a38},{a14,a15,a12},{a15,a16,a40},{a37,a38,a12},{a36,a37,a40},{a25,a26,a27},{a27,a28,a25},{a24,a25,a28},{a28,a29,a24},{a23,a24,a29},{a29,a30,a23},{a19,a20,a23},{a20,a21,a30},{a33,a34,a23},{a32,a33,a30},{a22,a23,a34},{a30,a31,a34},{a21,a22,a19},{a31,a32,a34},{a24,a35,a32},{a35,a36,a21},{a18,a19,a32},{a17,a18,a21}
+};
+
+epsilon ={1,1,1,1,-1,1,1,-1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1}
+
+validColorings={};
+
+colorings[a_List,b_List]:=
+Module[{collected,i,f, arcVariables,index,matches,key},
+If[a=={}||b=={},Return[{}]];
+arcVariables=Intersection[Keys[a[[1]]],Keys[b[[1]]]];
+If[arcVariables==={},Return[{}]];
+collected={};
+index=GroupBy[b,
+key@@Lookup[#,arcVariables]&
+]; (*Groups the associations in b by the values the arcs have in common, so that all the 0,1,2,...,2+2t associations are together, given that 0,1,2,...,2+2t are the variables that a and b have in common*)
+collected=Reap[
+For[i=1,i<=Length[a], i=i+1,matches=Lookup[index,key@@Lookup[a[[i]],arcVariables],{}
+];
+For[f=1,f<=Length[matches],f=f+1,Sow[Join[a[[i]],matches[[f]]]]
+];
+]
+][[2]];
+If[collected=={},
+{},
+First[collected]
+]
+];
