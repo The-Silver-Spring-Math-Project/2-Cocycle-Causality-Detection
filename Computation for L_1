@@ -1,4 +1,4 @@
-ClearAll["Global`*"];
+In[688]:= ClearAll["Global`*"];
 
 QuandleSet={0,1,2,t,2t,t+1,t+2,2t+1,2t+2}
 possibleColoringsAtCrossing=Tuples[QuandleSet,{3}]
@@ -41,3 +41,1004 @@ If[collected=={},
 First[collected]
 ]
 ];
+
+Out[689]= {0,1,2,t,2 t,1+t,2+t,1+2 t,2+2 t}
+
+Out[690]= TemplateBox[Association["shortenedBoxes" -> TagBox[RowBox[{"{", RowBox[{RowBox[{"{", RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", TemplateBox[{"698"}, "OutputSizeLimit`Skeleton"], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}]}], "}"}], Function[Short[Slot[1], 8]]], "line" -> 690, "sessionID" -> 27944683803631025931, "byteCount" -> 186680, "size" -> 8, "stored" -> False, "expr" -> Missing["NotAvailable", "NewSessionID"], "wrap" -> OutputSizeLimit`Defer, "version" -> 1], "OutputSizeLimitTemplate"]
+
+Out[698]= {1,1,1,1,-1,1,1,-1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1}
+
+In[701]:= (* Creating Branch A*)
+Print["STARTING BRANCH A"];
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a15=possibleColoringsAtCrossing[[i,1]];  a16=possibleColoringsAtCrossing[[i,2]];a40=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a15==PolynomialRemainder[t*a16+(1-t)*a40,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings25,<|arc15->a15,arc16->a16,arc40->a40|>]
+];
+];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a14=possibleColoringsAtCrossing[[i,1]];  a15=possibleColoringsAtCrossing[[i,2]];a12=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a14==PolynomialRemainder[t*a15+(1-t)*a12,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings24,<|arc14->a14,arc15->a15,arc12->a12|>]
+];
+];
+runningColoringTally=colorings[validColorings25,validColorings24];
+Print["AFTER 25+24 = ", Length[runningColoringTally]];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a10=possibleColoringsAtCrossing[[i,1]];  a11=possibleColoringsAtCrossing[[i,2]];a14=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a10==PolynomialRemainder[t*a11+(1-t)*a14,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings21,<|arc10->a10,arc11->a11,arc14->a14|>]
+];
+];
+runningColoringTally=colorings[runningColoringTally,validColorings21];
+Print["AFTER 21 = ", Length[runningColoringTally]];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a39=possibleColoringsAtCrossing[[i,1]];  a40=possibleColoringsAtCrossing[[i,2]];a10=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a39==PolynomialRemainder[t*a40+(1-t)*a10,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings17,<|arc39->a39,arc40->a40,arc10->a10|>]
+];
+];
+runningColoringTally=colorings[runningColoringTally,validColorings17];
+Print["AFTER 17 = ", Length[runningColoringTally]];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a12=possibleColoringsAtCrossing[[i,1]];  a13=possibleColoringsAtCrossing[[i,2]];a10=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a12==PolynomialRemainder[t*a13+(1-t)*a10,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings19,<|arc12->a12,arc13->a13,arc10->a10|>]
+];
+];
+runningColoringTally=colorings[runningColoringTally,validColorings19];
+Print["AFTER 19 = ", Length[runningColoringTally]];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a13=possibleColoringsAtCrossing[[i,1]];  a14=possibleColoringsAtCrossing[[i,2]];a42=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a13==PolynomialRemainder[t*a14+(1-t)*a42,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings18,<|arc13->a13,arc14->a14,arc42->a42|>]
+];
+];
+runningColoringTally=colorings[runningColoringTally,validColorings18];
+Print["AFTER 18 = ", Length[runningColoringTally]];
+
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a41=possibleColoringsAtCrossing[[i,1]];  a42=possibleColoringsAtCrossing[[i,2]];a14=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a41==PolynomialRemainder[t*a42+(1-t)*a14,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings20,<|arc41->a41,arc42->a42,arc14->a14|>]
+];
+];
+runningColoringTally=colorings[runningColoringTally,validColorings20];
+Print["AFTER 20 = ", Length[runningColoringTally]];
+
+validColorings15={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a9=possibleColoringsAtCrossing[[i,1]];  a10=possibleColoringsAtCrossing[[i,2]];a42=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a9==PolynomialRemainder[t*a10+(1-t)*a42,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings15,<|arc9->a9,arc10->a10,arc42->a42|>]
+];
+];
+runningColoringTally = colorings[runningColoringTally, validColorings15];
+
+validColorings14={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a42=possibleColoringsAtCrossing[[i,1]];  a43=possibleColoringsAtCrossing[[i,2]];a9=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a42==PolynomialRemainder[t*a43+(1-t)*a9,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings14,<|arc42->a42,arc43->a43,arc9->a9|>]
+];
+];
+Print["validColorings14 = ", Length[validColorings14]];
+Print["BEFORE 14 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings14];]
+Print["AFTER 14 = ", Length[runningColoringTally]];
+
+validColorings13={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a8=possibleColoringsAtCrossing[[i,1]];  a9=possibleColoringsAtCrossing[[i,2]];a43=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a8==PolynomialRemainder[t*a9+(1-t)*a43,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings13,<|arc8->a8,arc9->a9,arc43->a43|>]
+];
+];
+Print["validColorings13 = ", Length[validColorings13]];
+Print["BEFORE 13 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings13];]
+Print["AFTER 13 = ", Length[runningColoringTally]];
+
+validColorings12={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a43=possibleColoringsAtCrossing[[i,1]];  a44=possibleColoringsAtCrossing[[i,2]];a8=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a43==PolynomialRemainder[t*a44+(1-t)*a8,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings12,<|arc43->a43,arc44->a44,arc8->a8|>]
+];
+];
+Print["validColorings12 = ", Length[validColorings12]];
+Print["BEFORE 12 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings12];]
+Print["AFTER 12 = ", Length[runningColoringTally]];
+
+validColorings11={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a7=possibleColoringsAtCrossing[[i,1]];  a8=possibleColoringsAtCrossing[[i,2]];a44=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a7==PolynomialRemainder[t*a8+(1-t)*a44,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings11,<|arc7->a7,arc8->a8,arc44->a44|>]
+];
+];
+Print["validColorings11 = ", Length[validColorings11]];
+Print["BEFORE 11 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings11];]
+Print["AFTER 11 = ", Length[runningColoringTally]];
+
+validColorings10={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a44=possibleColoringsAtCrossing[[i,1]];  a45=possibleColoringsAtCrossing[[i,2]];a7=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a44==PolynomialRemainder[t*a45+(1-t)*a7,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings10,<|arc44->a44,arc45->a45,arc7->a7|>]
+];
+];
+Print["validColorings10 = ", Length[validColorings10]];
+Print["BEFORE 10 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings10];]
+Print["AFTER 10 = ", Length[runningColoringTally]];
+
+validColorings7={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a45=possibleColoringsAtCrossing[[i,1]];  a7=possibleColoringsAtCrossing[[i,2]];a4=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a45==PolynomialRemainder[t*a7+(1-t)*a4,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings7,<|arc45->a45,arc7->a7,arc4->a4|>]
+];
+];
+Print["validColorings7 = ", Length[validColorings7]];
+Print["BEFORE 7 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings7];]
+Print["AFTER 7 = ", Length[runningColoringTally]];
+
+validColorings6={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a5=possibleColoringsAtCrossing[[i,1]];  a4=possibleColoringsAtCrossing[[i,2]];a7=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a5==PolynomialRemainder[t*a4+(1-t)*a7,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings6,<|arc5->a5,arc4->a4,arc7->a7|>]
+];
+];
+Print["validColorings6 = ", Length[validColorings7]];
+Print["BEFORE 6 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings6];]
+Print["AFTER 6 = ", Length[runningColoringTally]];
+
+validColorings16={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a38=possibleColoringsAtCrossing[[i,1]];  a39=possibleColoringsAtCrossing[[i,2]];a42=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a38==PolynomialRemainder[t*a39+(1-t)*a42,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings16,<|arc38->a38,arc39->a39,arc42->a42|>]
+];
+];
+Print["validColorings16 = ", Length[validColorings16]];
+Print["BEFORE 16 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings16];]
+Print["AFTER 16 = ", Length[runningColoringTally]];
+
+validColorings22 = {};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a40=possibleColoringsAtCrossing[[i,1]];  a41=possibleColoringsAtCrossing[[i,2]];a38=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a40==PolynomialRemainder[t*a41+(1-t)*a38,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings22,<|arc40->a40,arc41->a41,arc38->a38|>]
+];
+];
+Print["validColorings22 = ", Length[validColorings22]];
+Print["BEFORE 22 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings22];]
+Print["AFTER 22 = ", Length[runningColoringTally]];
+
+validColorings26={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a37=possibleColoringsAtCrossing[[i,1]];  a38=possibleColoringsAtCrossing[[i,2]];a12=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a37==PolynomialRemainder[t*a38+(1-t)*a12,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings26,<|arc37->a37,arc38->a38,arc12->a12|>]
+];
+];
+Print["validColorings26 = ", Length[validColorings26]];
+Print["BEFORE 26 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings26];]
+Print["AFTER 26 = ", Length[runningColoringTally]];
+
+validColorings27={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a36=possibleColoringsAtCrossing[[i,1]];  a37=possibleColoringsAtCrossing[[i,2]];a40=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a36==PolynomialRemainder[t*a37+(1-t)*a40,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings27,<|arc36->a36,arc37->a37,arc40->a40|>]
+];
+];
+Print["validColorings27 = ", Length[validColorings27]];
+Print["BEFORE 27 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings27];]
+Print["AFTER 27 = ", Length[runningColoringTally]];
+
+Print["END BRANCH A = ", Length[runningColoringTally]]
+
+STARTING BRANCH A
+
+InterpretationBox[RowBox[{"\"AFTER 25+24 = \"", "\:f360", "729"}], SequenceForm["AFTER 25+24 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"AFTER 21 = \"", "\:f360", "6561"}], SequenceForm["AFTER 21 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"AFTER 17 = \"", "\:f360", "6561"}], SequenceForm["AFTER 17 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"AFTER 19 = \"", "\:f360", "6561"}], SequenceForm["AFTER 19 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"AFTER 18 = \"", "\:f360", "6561"}], SequenceForm["AFTER 18 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"AFTER 20 = \"", "\:f360", "6561"}], SequenceForm["AFTER 20 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings14 = \"", "\:f360", "81"}], SequenceForm["validColorings14 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 14 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 14 = ", 6561], Editable -> False]
+
+Out[728]= {0.071304,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 14 = \"", "\:f360", "6561"}], SequenceForm["AFTER 14 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings13 = \"", "\:f360", "81"}], SequenceForm["validColorings13 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 13 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 13 = ", 6561], Editable -> False]
+
+Out[734]= {0.073431,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 13 = \"", "\:f360", "6561"}], SequenceForm["AFTER 13 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings12 = \"", "\:f360", "81"}], SequenceForm["validColorings12 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 12 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 12 = ", 6561], Editable -> False]
+
+Out[740]= {0.072587,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 12 = \"", "\:f360", "6561"}], SequenceForm["AFTER 12 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings11 = \"", "\:f360", "81"}], SequenceForm["validColorings11 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 11 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 11 = ", 6561], Editable -> False]
+
+Out[746]= {0.068266,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 11 = \"", "\:f360", "6561"}], SequenceForm["AFTER 11 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings10 = \"", "\:f360", "81"}], SequenceForm["validColorings10 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 10 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 10 = ", 6561], Editable -> False]
+
+Out[752]= {0.069779,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 10 = \"", "\:f360", "6561"}], SequenceForm["AFTER 10 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings7 = \"", "\:f360", "81"}], SequenceForm["validColorings7 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 7 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 7 = ", 6561], Editable -> False]
+
+Out[758]= {0.07136,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 7 = \"", "\:f360", "6561"}], SequenceForm["AFTER 7 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings6 = \"", "\:f360", "81"}], SequenceForm["validColorings6 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 6 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 6 = ", 6561], Editable -> False]
+
+Out[764]= {0.071132,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 6 = \"", "\:f360", "6561"}], SequenceForm["AFTER 6 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings16 = \"", "\:f360", "81"}], SequenceForm["validColorings16 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 16 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 16 = ", 6561], Editable -> False]
+
+Out[770]= {0.071052,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 16 = \"", "\:f360", "6561"}], SequenceForm["AFTER 16 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings22 = \"", "\:f360", "81"}], SequenceForm["validColorings22 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 22 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 22 = ", 6561], Editable -> False]
+
+Out[776]= {0.050999,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 22 = \"", "\:f360", "729"}], SequenceForm["AFTER 22 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings26 = \"", "\:f360", "81"}], SequenceForm["validColorings26 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 26 = \"", "\:f360", "729"}], SequenceForm["BEFORE 26 = ", 729], Editable -> False]
+
+Out[782]= {0.008574,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 26 = \"", "\:f360", "729"}], SequenceForm["AFTER 26 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings27 = \"", "\:f360", "81"}], SequenceForm["validColorings27 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 27 = \"", "\:f360", "729"}], SequenceForm["BEFORE 27 = ", 729], Editable -> False]
+
+Out[788]= {0.008634,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 27 = \"", "\:f360", "729"}], SequenceForm["AFTER 27 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"END BRANCH A = \"", "\:f360", "729"}], SequenceForm["END BRANCH A = ", 729], Editable -> False]
+
+In[786]:= 3Length[possibleColoringsAtCrossing]
+Length[validColorings12] 
+Length[runningColoringTally]
+
+Out[786]= 2187
+
+Out[787]= 81
+
+Out[788]= 729
+
+In[791]:= (* STARTING BRANCH B*)
+validColorings39={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a30=possibleColoringsAtCrossing[[i,1]];a31=possibleColoringsAtCrossing[[i,2]];a34=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a30==PolynomialRemainder[t*a31+(1-t)*a34,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings39,<|arc30->a30,arc31->a31,arc34->a34|>]
+];
+];
+
+validColorings36={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a33=possibleColoringsAtCrossing[[i,1]];a34=possibleColoringsAtCrossing[[i,2]];a23=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a33==PolynomialRemainder[t*a34+(1-t)*a23,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings36,<|arc33->a33,arc34->a34,arc23->a23|>]
+];
+];
+runningColoringTally2=colorings[validColorings39,validColorings36];
+Print["AFTER 39+36 = ", Length[runningColoringTally2]];
+
+validColorings37={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a32=possibleColoringsAtCrossing[[i,1]];a33=possibleColoringsAtCrossing[[i,2]];a30=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a32==PolynomialRemainder[t*a33+(1-t)*a30,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings37,<|arc32->a32,arc33->a33,arc30->a30|>]
+];
+];
+Print["validColorings37 = ", Length[validColorings37]];
+Print["BEFORE 37 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings37];]
+Print["AFTER 37 = ", Length[runningColoringTally2]];
+
+validColorings38={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a22=possibleColoringsAtCrossing[[i,1]];a23=possibleColoringsAtCrossing[[i,2]];a34=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a22==PolynomialRemainder[t*a23+(1-t)*a34,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings38,<|arc22->a22,arc23->a23,arc34->a34|>]
+];
+];
+Print["validColorings38 = ", Length[validColorings38]];
+Print["BEFORE 38 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings38];]
+Print["AFTER 38 = ", Length[runningColoringTally2]];
+
+
+validColorings33={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a29=possibleColoringsAtCrossing[[i,1]];a30=possibleColoringsAtCrossing[[i,2]];a23=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a29==PolynomialRemainder[t*a30+(1-t)*a23,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings33,<|arc29->a29,arc30->a30,arc23->a23|>]
+];
+];
+Print["validColorings33 = ", Length[validColorings33]];
+Print["BEFORE 33 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings33];]
+Print["AFTER 33 = ", Length[runningColoringTally2]];
+
+validColorings32={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a23=possibleColoringsAtCrossing[[i,1]];  a24=possibleColoringsAtCrossing[[i,2]];a29=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a23==PolynomialRemainder[t*a24+(1-t)*a29,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings32,<|arc23->a23,arc24->a24,arc29->a29|>]
+];
+];
+Print["validColorings32 = ", Length[validColorings32]];
+Print["BEFORE 32 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings32];]
+Print["AFTER 32 = ", Length[runningColoringTally2]];
+
+validColorings42={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a24=possibleColoringsAtCrossing[[i,1]];  a35=possibleColoringsAtCrossing[[i,2]];a32=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a24==PolynomialRemainder[t*a35+(1-t)*a32,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings42,<|arc24->a24,arc35->a35,arc32->a32|>]
+];
+];
+Print["validColorings42 = ", Length[validColorings42]];
+Print["BEFORE 42 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings42];]
+Print["AFTER 42 = ", Length[runningColoringTally2]];
+
+validColorings31={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a28=possibleColoringsAtCrossing[[i,1]];  a29=possibleColoringsAtCrossing[[i,2]];a24=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a28==PolynomialRemainder[t*a29+(1-t)*a24,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings31,<|arc28->a28,arc29->a29,arc24->a24|>]
+];
+];
+Print["validColorings31 = ", Length[validColorings31]];
+Print["BEFORE 31 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings31];]
+Print["AFTER 31 = ", Length[runningColoringTally2]];
+
+validColorings30={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a24=possibleColoringsAtCrossing[[i,1]];  a25=possibleColoringsAtCrossing[[i,2]];a28=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a24==PolynomialRemainder[t*a25+(1-t)*a28,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings30,<|arc24->a24,arc25->a25,arc28->a28|>]
+];
+];
+Print["validColorings30 = ", Length[validColorings30]];
+Print["BEFORE 30 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings30];]
+Print["AFTER 30 = ", Length[runningColoringTally2]];
+
+validColorings29={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a27=possibleColoringsAtCrossing[[i,1]];  a28=possibleColoringsAtCrossing[[i,2]];a25=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a27==PolynomialRemainder[t*a28+(1-t)*a25,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings29,<|arc27->a27,arc28->a28,arc25->a25|>]
+];
+];
+Print["validColorings29 = ", Length[validColorings29]];
+Print["BEFORE 29 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings29];]
+Print["AFTER 29 = ", Length[runningColoringTally2]];
+
+validColorings28={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a25=possibleColoringsAtCrossing[[i,1]];  a26=possibleColoringsAtCrossing[[i,2]];a27=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a25==PolynomialRemainder[t*a26+(1-t)*a27,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings28,<|arc25->a25,arc26->a26,arc27->a27|>]
+];
+];
+Print["validColorings28 = ", Length[validColorings28]];
+Print["BEFORE 28 = ", Length[runningColoringTally2]];
+AbsoluteTiming[runningColoringTally2 = colorings[runningColoringTally2, validColorings28];]
+Print["AFTER 28 = ", Length[runningColoringTally2]];
+
+validColorings8={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a26=possibleColoringsAtCrossing[[i,1]];  a27=possibleColoringsAtCrossing[[i,2]];a4=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a26==PolynomialRemainder[t*a27+(1-t)*a4,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings8,<|arc26->a26,arc27->a27,arc4->a4|>]
+];
+];
+runningColoringTally2=colorings[runningColoringTally2,validColorings8];
+runningColoringTally=colorings[runningColoringTally,runningColoringTally2];
+
+
+validColorings43={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a35=possibleColoringsAtCrossing[[i,1]];  a36=possibleColoringsAtCrossing[[i,2]];a21=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a35==PolynomialRemainder[t*a36+(1-t)*a21,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings43,<|arc35->a35,arc36->a36,arc21->a21|>]
+];
+];
+Print["validColorings43 = ", Length[validColorings43]];
+Print["BEFORE 43 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings43];]
+Print["AFTER 43 = ", Length[runningColoringTally]];
+
+validColorings35={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a20=possibleColoringsAtCrossing[[i,1]];  a21=possibleColoringsAtCrossing[[i,2]];a30=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a20==PolynomialRemainder[t*a21+(1-t)*a30,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings35,<|arc20->a20,arc21->a21,arc30->a30|>]
+];
+];
+Print["validColorings35 = ", Length[validColorings35]];
+Print["BEFORE 35 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings35];]
+Print["AFTER 35 = ", Length[runningColoringTally]];
+
+validColorings40={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a21=possibleColoringsAtCrossing[[i,1]];  a22=possibleColoringsAtCrossing[[i,2]];a19=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a21==PolynomialRemainder[t*a22+(1-t)*a19,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings40,<|arc21->a21,arc22->a22,arc19->a19|>]
+];
+];
+Print["validColorings40 = ", Length[validColorings40]];
+Print["BEFORE 40 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings40];]
+Print["AFTER 40 = ", Length[runningColoringTally]];
+
+validColorings44={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a18=possibleColoringsAtCrossing[[i,1]];  a19=possibleColoringsAtCrossing[[i,2]];a32=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a18==PolynomialRemainder[t*a19+(1-t)*a32,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings44,<|arc18->a18,arc19->a19,arc32->a32|>]
+];
+];
+Print["validColorings44 = ", Length[validColorings44]];
+Print["BEFORE 44 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings44];]
+Print["AFTER 44 = ", Length[runningColoringTally]];
+
+validColorings34={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a19=possibleColoringsAtCrossing[[i,1]];  a20=possibleColoringsAtCrossing[[i,2]];a23=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a19==PolynomialRemainder[t*a20+(1-t)*a23,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings34,<|arc19->a19,arc20->a20,arc23->a23|>]
+];
+];
+Print["validColorings34 = ", Length[validColorings34]];
+Print["BEFORE 34 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings34];]
+Print["AFTER 34 = ", Length[runningColoringTally]];
+
+validColorings41={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a31=possibleColoringsAtCrossing[[i,1]];  a32=possibleColoringsAtCrossing[[i,2]];a34=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a31==PolynomialRemainder[t*a32+(1-t)*a34,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings41,<|arc31->a31,arc32->a32,arc34->a34|>]
+];
+];
+Print["validColorings41 = ", Length[validColorings41]];
+Print["BEFORE 41 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings41];]
+Print["AFTER 41 = ", Length[runningColoringTally]];
+
+Length[possibleColoringsAtCrossing]
+Length[runningColoringTally]
+
+InterpretationBox[RowBox[{"\"AFTER 39+36 = \"", "\:f360", "729"}], SequenceForm["AFTER 39+36 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings37 = \"", "\:f360", "81"}], SequenceForm["validColorings37 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 37 = \"", "\:f360", "729"}], SequenceForm["BEFORE 37 = ", 729], Editable -> False]
+
+Out[801]= {0.007953,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 37 = \"", "\:f360", "729"}], SequenceForm["AFTER 37 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings38 = \"", "\:f360", "81"}], SequenceForm["validColorings38 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 38 = \"", "\:f360", "729"}], SequenceForm["BEFORE 38 = ", 729], Editable -> False]
+
+Out[807]= {0.009084,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 38 = \"", "\:f360", "729"}], SequenceForm["AFTER 38 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings33 = \"", "\:f360", "81"}], SequenceForm["validColorings33 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 33 = \"", "\:f360", "729"}], SequenceForm["BEFORE 33 = ", 729], Editable -> False]
+
+Out[813]= {0.008728,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 33 = \"", "\:f360", "729"}], SequenceForm["AFTER 33 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings32 = \"", "\:f360", "81"}], SequenceForm["validColorings32 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 32 = \"", "\:f360", "729"}], SequenceForm["BEFORE 32 = ", 729], Editable -> False]
+
+Out[819]= {0.00794,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 32 = \"", "\:f360", "729"}], SequenceForm["AFTER 32 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings42 = \"", "\:f360", "81"}], SequenceForm["validColorings42 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 42 = \"", "\:f360", "729"}], SequenceForm["BEFORE 42 = ", 729], Editable -> False]
+
+Out[825]= {0.008851,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 42 = \"", "\:f360", "729"}], SequenceForm["AFTER 42 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings31 = \"", "\:f360", "81"}], SequenceForm["validColorings31 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 31 = \"", "\:f360", "729"}], SequenceForm["BEFORE 31 = ", 729], Editable -> False]
+
+Out[831]= {0.014363,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 31 = \"", "\:f360", "729"}], SequenceForm["AFTER 31 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings30 = \"", "\:f360", "81"}], SequenceForm["validColorings30 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 30 = \"", "\:f360", "729"}], SequenceForm["BEFORE 30 = ", 729], Editable -> False]
+
+Out[837]= {0.01471,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 30 = \"", "\:f360", "729"}], SequenceForm["AFTER 30 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings29 = \"", "\:f360", "81"}], SequenceForm["validColorings29 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 29 = \"", "\:f360", "729"}], SequenceForm["BEFORE 29 = ", 729], Editable -> False]
+
+Out[843]= {0.008125,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 29 = \"", "\:f360", "729"}], SequenceForm["AFTER 29 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings28 = \"", "\:f360", "81"}], SequenceForm["validColorings28 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 28 = \"", "\:f360", "729"}], SequenceForm["BEFORE 28 = ", 729], Editable -> False]
+
+Out[849]= {0.014022,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 28 = \"", "\:f360", "729"}], SequenceForm["AFTER 28 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings43 = \"", "\:f360", "81"}], SequenceForm["validColorings43 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 43 = \"", "\:f360", "59049"}], SequenceForm["BEFORE 43 = ", 59049], Editable -> False]
+
+Out[859]= {0.664689,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 43 = \"", "\:f360", "59049"}], SequenceForm["AFTER 43 = ", 59049], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings35 = \"", "\:f360", "81"}], SequenceForm["validColorings35 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 35 = \"", "\:f360", "59049"}], SequenceForm["BEFORE 35 = ", 59049], Editable -> False]
+
+Out[865]= {0.758446,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 35 = \"", "\:f360", "59049"}], SequenceForm["AFTER 35 = ", 59049], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings40 = \"", "\:f360", "81"}], SequenceForm["validColorings40 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 40 = \"", "\:f360", "59049"}], SequenceForm["BEFORE 40 = ", 59049], Editable -> False]
+
+Out[871]= {0.770616,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 40 = \"", "\:f360", "59049"}], SequenceForm["AFTER 40 = ", 59049], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings44 = \"", "\:f360", "81"}], SequenceForm["validColorings44 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 44 = \"", "\:f360", "59049"}], SequenceForm["BEFORE 44 = ", 59049], Editable -> False]
+
+Out[877]= {0.799973,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 44 = \"", "\:f360", "59049"}], SequenceForm["AFTER 44 = ", 59049], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings34 = \"", "\:f360", "81"}], SequenceForm["validColorings34 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 34 = \"", "\:f360", "59049"}], SequenceForm["BEFORE 34 = ", 59049], Editable -> False]
+
+Out[883]= {0.495759,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 34 = \"", "\:f360", "6561"}], SequenceForm["AFTER 34 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings41 = \"", "\:f360", "81"}], SequenceForm["validColorings41 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 41 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 41 = ", 6561], Editable -> False]
+
+Out[889]= {0.075679,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 41 = \"", "\:f360", "729"}], SequenceForm["AFTER 41 = ", 729], Editable -> False]
+
+Out[891]= 729
+
+Out[892]= 729
+
+In[893]:= 
+(*STARTING BRANCH C*)
+validColorings4={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a1=possibleColoringsAtCrossing[[i,1]];  a2=possibleColoringsAtCrossing[[i,2]];a3=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a1==PolynomialRemainder[t*a2+(1-t)*a3,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings4,<|arc1->a1,arc2->a2,arc3->a3|>]
+];
+];
+
+validColorings3={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a3=possibleColoringsAtCrossing[[i,1]];  a6=possibleColoringsAtCrossing[[i,2]];a1=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a3==PolynomialRemainder[t*a6+(1-t)*a1,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings3,<|arc3->a3,arc6->a6,arc1->a1|>]
+];
+];
+runningColoringTally3=colorings[validColorings4,validColorings3];
+Print["AFTER 4+3 = ", Length[runningColoringTally3]];
+
+validColorings1={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a2=possibleColoringsAtCrossing[[i,1]];  a1=possibleColoringsAtCrossing[[i,2]];a16=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a2==PolynomialRemainder[t*a1+(1-t)*a16,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings1,<|arc2->a2,arc1->a1,arc16->a16|>]
+];
+];
+runningColoringTally3=colorings[runningColoringTally3,validColorings1];
+runningColoringTally=colorings[runningColoringTally,runningColoringTally3];
+
+validColorings2={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a16=possibleColoringsAtCrossing[[i,1]];  a17=possibleColoringsAtCrossing[[i,2]];a1=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a16==PolynomialRemainder[t*a17+(1-t)*a1,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings2,<|arc16->a16,arc17->a17,arc1->a1|>]
+];
+];
+Print["validColorings2 = ", Length[validColorings2]];
+Print["BEFORE 2 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings2];]
+Print["AFTER 2 = ", Length[runningColoringTally]];
+
+validColorings5={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a6=possibleColoringsAtCrossing[[i,1]];  a5=possibleColoringsAtCrossing[[i,2]];a3=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a6==PolynomialRemainder[t*a5+(1-t)*a3,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings5,<|arc6->a6,arc5->a5,arc3->a3|>]
+];
+];
+Print["validColorings5 = ", Length[validColorings5]];
+Print["BEFORE 5 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings5];]
+Print["AFTER 5 = ", Length[runningColoringTally]];
+
+validColorings9={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a4=possibleColoringsAtCrossing[[i,1]];  a3=possibleColoringsAtCrossing[[i,2]];a26=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a4==PolynomialRemainder[t*a3+(1-t)*a26,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings9,<|arc4->a4,arc3->a3,arc26->a26|>]
+];
+];
+Print["validColorings9 = ", Length[validColorings9]];
+Print["BEFORE 9 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings9];]
+Print["AFTER 9 = ", Length[runningColoringTally]];
+
+validColorings45={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a17=possibleColoringsAtCrossing[[i,1]];  a18=possibleColoringsAtCrossing[[i,2]];a21=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a17==PolynomialRemainder[t*a18+(1-t)*a21,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings45,<|arc17->a17,arc18->a18,arc21->a21|>]
+];
+];
+Print["validColorings45 = ", Length[validColorings45]];
+Print["BEFORE 45 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings45];]
+Print["AFTER 45 = ", Length[runningColoringTally]];
+
+validColorings23={};
+For[i=1,
+i<=Length[possibleColoringsAtCrossing],
+i=i+1,
+a11=possibleColoringsAtCrossing[[i,1]];  a12=possibleColoringsAtCrossing[[i,2]];a38=possibleColoringsAtCrossing[[i,3]];
+If[Simplify[a11==PolynomialRemainder[t*a12+(1-t)*a38,t^2 +1,t,Modulus->3]],
+AppendTo[validColorings23,<|arc11->a11,arc12->a12,arc38->a38|>]
+];
+];
+Print["validColorings23 = ", Length[validColorings23]];
+Print["BEFORE 23 = ", Length[runningColoringTally]];
+AbsoluteTiming[runningColoringTally = colorings[runningColoringTally, validColorings23];]
+Print["AFTER 23 = ", Length[runningColoringTally]];
+
+Length[possibleColoringsAtCrossing]
+Length[runningColoringTally]
+Print[runningColoringTally]
+
+InterpretationBox[RowBox[{"\"AFTER 4+3 = \"", "\:f360", "81"}], SequenceForm["AFTER 4+3 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings2 = \"", "\:f360", "81"}], SequenceForm["validColorings2 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 2 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 2 = ", 6561], Editable -> False]
+
+Out[907]= {0.080691,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 2 = \"", "\:f360", "6561"}], SequenceForm["AFTER 2 = ", 6561], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings5 = \"", "\:f360", "81"}], SequenceForm["validColorings5 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 5 = \"", "\:f360", "6561"}], SequenceForm["BEFORE 5 = ", 6561], Editable -> False]
+
+Out[913]= {0.068892,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 5 = \"", "\:f360", "729"}], SequenceForm["AFTER 5 = ", 729], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings9 = \"", "\:f360", "81"}], SequenceForm["validColorings9 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 9 = \"", "\:f360", "729"}], SequenceForm["BEFORE 9 = ", 729], Editable -> False]
+
+Out[919]= {0.006805,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 9 = \"", "\:f360", "81"}], SequenceForm["AFTER 9 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings45 = \"", "\:f360", "81"}], SequenceForm["validColorings45 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 45 = \"", "\:f360", "81"}], SequenceForm["BEFORE 45 = ", 81], Editable -> False]
+
+Out[925]= {0.001739,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 45 = \"", "\:f360", "81"}], SequenceForm["AFTER 45 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"validColorings23 = \"", "\:f360", "81"}], SequenceForm["validColorings23 = ", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"BEFORE 23 = \"", "\:f360", "81"}], SequenceForm["BEFORE 23 = ", 81], Editable -> False]
+
+Out[931]= {0.001978,Null}
+
+InterpretationBox[RowBox[{"\"AFTER 23 = \"", "\:f360", "81"}], SequenceForm["AFTER 23 = ", 81], Editable -> False]
+
+Out[933]= 729
+
+Out[934]= 81
+
+{\[LeftAssociation]arc15->0,arc16->0,arc40->0,arc14->0,arc12->0,arc10->0,arc11->0,arc39->0,arc13->0,arc42->0,arc41->0,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->0,arc37->0,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->0,arc16->1,arc40->2+t,arc14->2 t,arc12->2+t,arc10->1,arc11->1+t,arc39->t,arc13->2+2 t,arc42->1,arc41->2,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->2 t,arc37->1+2 t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->0,arc16->2,arc40->1+2 t,arc14->t,arc12->1+2 t,arc10->2,arc11->2+2 t,arc39->2 t,arc13->1+t,arc42->2,arc41->1,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->t,arc37->2+t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->0,arc16->t,arc40->2+2 t,arc14->1,arc12->2+2 t,arc10->t,arc11->2+t,arc39->2,arc13->1+2 t,arc42->t,arc41->2 t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->1,arc37->1+t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->0,arc16->2 t,arc40->1+t,arc14->2,arc12->1+t,arc10->2 t,arc11->1+2 t,arc39->1,arc13->2+t,arc42->2 t,arc41->t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->2,arc37->2+2 t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->0,arc16->1+t,arc40->1,arc14->1+2 t,arc12->1,arc10->1+t,arc11->2 t,arc39->2+t,arc13->t,arc42->1+t,arc41->2+2 t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->1+2 t,arc37->2,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->0,arc16->2+t,arc40->t,arc14->1+t,arc12->t,arc10->2+t,arc11->1,arc39->2+2 t,arc13->2,arc42->2+t,arc41->1+2 t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->1+t,arc37->2 t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->0,arc16->1+2 t,arc40->2 t,arc14->2+2 t,arc12->2 t,arc10->1+2 t,arc11->2,arc39->1+t,arc13->1,arc42->1+2 t,arc41->2+t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->2+2 t,arc37->t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->0,arc16->2+2 t,arc40->2,arc14->2+t,arc12->2,arc10->2+2 t,arc11->t,arc39->1+2 t,arc13->2 t,arc42->2+2 t,arc41->1+t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->2+t,arc37->1,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->0,arc40->2+2 t,arc14->1+t,arc12->2+2 t,arc10->0,arc11->2 t,arc39->1+2 t,arc13->2+t,arc42->0,arc41->2,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->1+t,arc37->t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->1,arc16->1,arc40->1,arc14->1,arc12->1,arc10->1,arc11->1,arc39->1,arc13->1,arc42->1,arc41->1,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->1,arc37->1,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->1,arc16->2,arc40->t,arc14->1+2 t,arc12->t,arc10->2,arc11->2+t,arc39->1+t,arc13->2 t,arc42->2,arc41->0,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->1+2 t,arc37->2+2 t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->1,arc16->t,arc40->1+t,arc14->2+t,arc12->1+t,arc10->t,arc11->2,arc39->2 t,arc13->0,arc42->t,arc41->2+2 t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->2+t,arc37->1+2 t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->2 t,arc40->0,arc14->t,arc12->0,arc10->2 t,arc11->1+t,arc39->2+2 t,arc13->1+2 t,arc42->2 t,arc41->2+t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->t,arc37->2,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->1+t,arc40->2 t,arc14->2,arc12->2 t,arc10->1+t,arc11->t,arc39->0,arc13->2+2 t,arc42->1+t,arc41->1+2 t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->2,arc37->2+t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->2+t,arc40->2,arc14->2+2 t,arc12->2,arc10->2+t,arc11->1+2 t,arc39->t,arc13->1+t,arc42->2+t,arc41->2 t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->2+2 t,arc37->0,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->1+2 t,arc40->2+t,arc14->0,arc12->2+t,arc10->1+2 t,arc11->2+2 t,arc39->2,arc13->t,arc42->1+2 t,arc41->1+t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->0,arc37->2 t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->1,arc16->2+2 t,arc40->1+2 t,arc14->2 t,arc12->1+2 t,arc10->2+2 t,arc11->0,arc39->2+t,arc13->2,arc42->2+2 t,arc41->t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->2 t,arc37->1+t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->0,arc40->1+t,arc14->2+2 t,arc12->1+t,arc10->0,arc11->t,arc39->2+t,arc13->1+2 t,arc42->0,arc41->1,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->2+2 t,arc37->2 t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->2,arc16->1,arc40->2 t,arc14->2+t,arc12->2 t,arc10->1,arc11->1+2 t,arc39->2+2 t,arc13->t,arc42->1,arc41->0,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->2+t,arc37->1+t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->2,arc16->2,arc40->2,arc14->2,arc12->2,arc10->2,arc11->2,arc39->2,arc13->2,arc42->2,arc41->2,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->2,arc37->2,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->2,arc16->t,arc40->0,arc14->2 t,arc12->0,arc10->t,arc11->2+2 t,arc39->1+t,arc13->2+t,arc42->t,arc41->1+2 t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->2 t,arc37->1,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->2 t,arc40->2+2 t,arc14->1+2 t,arc12->2+2 t,arc10->2 t,arc11->1,arc39->t,arc13->0,arc42->2 t,arc41->1+t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->1+2 t,arc37->2+t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->1+t,arc40->2+t,arc14->t,arc12->2+t,arc10->1+t,arc11->0,arc39->1+2 t,arc13->1,arc42->1+t,arc41->2 t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->t,arc37->2+2 t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->2+t,arc40->1+2 t,arc14->0,arc12->1+2 t,arc10->2+t,arc11->1+t,arc39->1,arc13->2 t,arc42->2+t,arc41->2+2 t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->0,arc37->t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->1+2 t,arc40->1,arc14->1+t,arc12->1,arc10->1+2 t,arc11->2+t,arc39->2 t,arc13->2+2 t,arc42->1+2 t,arc41->t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->1+t,arc37->0,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->2,arc16->2+2 t,arc40->t,arc14->1,arc12->t,arc10->2+2 t,arc11->2 t,arc39->0,arc13->1+t,arc42->2+2 t,arc41->2+t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->1,arc37->1+2 t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->0,arc40->1+2 t,arc14->2+t,arc12->1+2 t,arc10->0,arc11->1,arc39->1+t,arc13->2+2 t,arc42->0,arc41->2 t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->2+t,arc37->2,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->t,arc16->1,arc40->0,arc14->2,arc12->0,arc10->1,arc11->2+t,arc39->1+2 t,arc13->1+t,arc42->1,arc41->2+2 t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->2,arc37->2 t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->t,arc16->2,arc40->2+t,arc14->2+2 t,arc12->2+t,arc10->2,arc11->2 t,arc39->1,arc13->0,arc42->2,arc41->1+2 t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->2+2 t,arc37->1+t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->t,arc16->t,arc40->t,arc14->t,arc12->t,arc10->t,arc11->t,arc39->t,arc13->t,arc42->t,arc41->t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->t,arc37->t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->2 t,arc40->2,arc14->1+t,arc12->2,arc10->2 t,arc11->2+2 t,arc39->2+t,arc13->1,arc42->2 t,arc41->0,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->1+t,arc37->1+2 t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->1+t,arc40->2+2 t,arc14->0,arc12->2+2 t,arc10->1+t,arc11->1+2 t,arc39->2 t,arc13->2,arc42->1+t,arc41->2+t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->0,arc37->1,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->2+t,arc40->1,arc14->2 t,arc12->1,arc10->2+t,arc11->2,arc39->0,arc13->1+2 t,arc42->2+t,arc41->1+t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->2 t,arc37->2+2 t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->1+2 t,arc40->1+t,arc14->1,arc12->1+t,arc10->1+2 t,arc11->0,arc39->2+2 t,arc13->2 t,arc42->1+2 t,arc41->2,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->1,arc37->2+t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->t,arc16->2+2 t,arc40->2 t,arc14->1+2 t,arc12->2 t,arc10->2+2 t,arc11->1+t,arc39->2,arc13->2+t,arc42->2+2 t,arc41->1,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->1+2 t,arc37->0,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->0,arc40->2+t,arc14->1+2 t,arc12->2+t,arc10->0,arc11->2,arc39->2+2 t,arc13->1+t,arc42->0,arc41->t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->1+2 t,arc37->1,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->1,arc40->1+2 t,arc14->1+t,arc12->1+2 t,arc10->1,arc11->t,arc39->2,arc13->0,arc42->1,arc41->2+t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->1+t,arc37->2+2 t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->2,arc40->0,arc14->1,arc12->0,arc10->2,arc11->1+2 t,arc39->2+t,arc13->2+2 t,arc42->2,arc41->1+t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->1,arc37->t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->t,arc40->1,arc14->2+2 t,arc12->1,arc10->t,arc11->1+t,arc39->1+2 t,arc13->2,arc42->t,arc41->0,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->2+2 t,arc37->2+t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->2 t,arc40->2 t,arc14->2 t,arc12->2 t,arc10->2 t,arc11->2 t,arc39->2 t,arc13->2 t,arc42->2 t,arc41->2 t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->2 t,arc37->2 t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->1+t,arc40->t,arc14->2+t,arc12->t,arc10->1+t,arc11->2+2 t,arc39->1,arc13->1+2 t,arc42->1+t,arc41->2,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->2+t,arc37->0,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->2+t,arc40->2+2 t,arc14->2,arc12->2+2 t,arc10->2+t,arc11->0,arc39->1+t,arc13->t,arc42->2+t,arc41->1,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->2,arc37->1+2 t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->1+2 t,arc40->2,arc14->t,arc12->2,arc10->1+2 t,arc11->1,arc39->0,arc13->2+t,arc42->1+2 t,arc41->2+2 t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->t,arc37->1+t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->2 t,arc16->2+2 t,arc40->1+t,arc14->0,arc12->1+t,arc10->2+2 t,arc11->2+t,arc39->t,arc13->1,arc42->2+2 t,arc41->1+2 t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->0,arc37->2,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->0,arc40->t,arc14->2 t,arc12->t,arc10->0,arc11->1+2 t,arc39->2,arc13->1,arc42->0,arc41->2+2 t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->2 t,arc37->2+t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->1,arc40->2+2 t,arc14->t,arc12->2+2 t,arc10->1,arc11->2,arc39->2+t,arc13->2 t,arc42->1,arc41->1+2 t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->t,arc37->0,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->2,arc40->1,arc14->0,arc12->1,arc10->2,arc11->t,arc39->2+2 t,arc13->2+t,arc42->2,arc41->2 t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->0,arc37->1+2 t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->t,arc40->2,arc14->1+2 t,arc12->2,arc10->t,arc11->0,arc39->1,arc13->2+2 t,arc42->t,arc41->2+t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->1+2 t,arc37->2 t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->2 t,arc40->1+2 t,arc14->2+2 t,arc12->1+2 t,arc10->2 t,arc11->2+t,arc39->0,arc13->t,arc42->2 t,arc41->2,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->2+2 t,arc37->1,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->1+t,arc40->1+t,arc14->1+t,arc12->1+t,arc10->1+t,arc11->1+t,arc39->1+t,arc13->1+t,arc42->1+t,arc41->1+t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->1+t,arc37->1+t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->2+t,arc40->2 t,arc14->1,arc12->2 t,arc10->2+t,arc11->2+2 t,arc39->1+2 t,arc13->0,arc42->2+t,arc41->t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->1,arc37->2,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->1+2 t,arc40->0,arc14->2+t,arc12->0,arc10->1+2 t,arc11->2 t,arc39->t,arc13->2,arc42->1+2 t,arc41->1,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->2+t,arc37->2+2 t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->1+t,arc16->2+2 t,arc40->2+t,arc14->2,arc12->2+t,arc10->2+2 t,arc11->1,arc39->2 t,arc13->1+2 t,arc42->2+2 t,arc41->0,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->2,arc37->t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->0,arc40->2,arc14->1,arc12->2,arc10->0,arc11->1+t,arc39->2 t,arc13->t,arc42->0,arc41->1+2 t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->1,arc37->2+2 t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->1,arc40->1+t,arc14->1+2 t,arc12->1+t,arc10->1,arc11->2+2 t,arc39->0,arc13->2,arc42->1,arc41->2 t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->1+2 t,arc37->t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->2,arc40->2 t,arc14->1+t,arc12->2 t,arc10->2,arc11->0,arc39->t,arc13->1+2 t,arc42->2,arc41->2+2 t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->1+t,arc37->1,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->t,arc40->1+2 t,arc14->2,arc12->1+2 t,arc10->t,arc11->2 t,arc39->2+2 t,arc13->1,arc42->t,arc41->1+t,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->2,arc37->0,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->2 t,arc40->t,arc14->0,arc12->t,arc10->2 t,arc11->2,arc39->1+2 t,arc13->2+2 t,arc42->2 t,arc41->1,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->0,arc37->1+t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->1+t,arc40->0,arc14->2+2 t,arc12->0,arc10->1+t,arc11->1,arc39->2,arc13->2 t,arc42->1+t,arc41->t,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->2+2 t,arc37->1+2 t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->2+t,arc40->2+t,arc14->2+t,arc12->2+t,arc10->2+t,arc11->2+t,arc39->2+t,arc13->2+t,arc42->2+t,arc41->2+t,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->2+t,arc37->2+t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->1+2 t,arc40->2+2 t,arc14->2 t,arc12->2+2 t,arc10->1+2 t,arc11->t,arc39->1,arc13->1+t,arc42->1+2 t,arc41->0,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->2 t,arc37->2,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->2+t,arc16->2+2 t,arc40->1,arc14->t,arc12->1,arc10->2+2 t,arc11->1+2 t,arc39->1+t,arc13->0,arc42->2+2 t,arc41->2,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->t,arc37->2 t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->0,arc40->1,arc14->2,arc12->1,arc10->0,arc11->2+2 t,arc39->t,arc13->2 t,arc42->0,arc41->2+t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->2,arc37->1+t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->1,arc40->t,arc14->2+2 t,arc12->t,arc10->1,arc11->0,arc39->2 t,arc13->2+t,arc42->1,arc41->1+t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->2+2 t,arc37->2,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->2,arc40->2+2 t,arc14->2+t,arc12->2+2 t,arc10->2,arc11->1+t,arc39->0,arc13->1,arc42->2,arc41->t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->2+t,arc37->2 t,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->t,arc40->2 t,arc14->0,arc12->2 t,arc10->t,arc11->1,arc39->2+t,arc13->1+t,arc42->t,arc41->2,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->0,arc37->2+2 t,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->2 t,arc40->2+t,arc14->1,arc12->2+t,arc10->2 t,arc11->t,arc39->1+t,arc13->2,arc42->2 t,arc41->2+2 t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->1,arc37->0,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->1+t,arc40->2,arc14->2 t,arc12->2,arc10->1+t,arc11->2+t,arc39->2+2 t,arc13->0,arc42->1+t,arc41->1,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->2 t,arc37->t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->2+t,arc40->1+t,arc14->t,arc12->1+t,arc10->2+t,arc11->2 t,arc39->2,arc13->2+2 t,arc42->2+t,arc41->0,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->t,arc37->1,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->1+2 t,arc40->1+2 t,arc14->1+2 t,arc12->1+2 t,arc10->1+2 t,arc11->1+2 t,arc39->1+2 t,arc13->1+2 t,arc42->1+2 t,arc41->1+2 t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->1+2 t,arc37->1+2 t,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->1+2 t,arc16->2+2 t,arc40->0,arc14->1+t,arc12->0,arc10->2+2 t,arc11->2,arc39->1,arc13->t,arc42->2+2 t,arc41->2 t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->1+t,arc37->2+t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->0,arc40->2 t,arc14->t,arc12->2 t,arc10->0,arc11->2+t,arc39->1,arc13->2,arc42->0,arc41->1+t,arc9->0,arc43->0,arc8->0,arc44->0,arc7->0,arc45->0,arc4->0,arc5->0,arc38->t,arc37->1+2 t,arc36->0,arc30->0,arc31->0,arc34->0,arc33->0,arc23->0,arc32->0,arc22->0,arc29->0,arc24->0,arc35->0,arc28->0,arc25->0,arc27->0,arc26->0,arc21->0,arc20->0,arc19->0,arc18->0,arc1->0,arc2->0,arc3->0,arc6->0,arc17->0\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->1,arc40->2,arc14->0,arc12->2,arc10->1,arc11->2 t,arc39->1+t,arc13->1+2 t,arc42->1,arc41->t,arc9->1,arc43->1,arc8->1,arc44->1,arc7->1,arc45->1,arc4->1,arc5->1,arc38->0,arc37->2+t,arc36->1,arc30->1,arc31->1,arc34->1,arc33->1,arc23->1,arc32->1,arc22->1,arc29->1,arc24->1,arc35->1,arc28->1,arc25->1,arc27->1,arc26->1,arc21->1,arc20->1,arc19->1,arc18->1,arc1->1,arc2->1,arc3->1,arc6->1,arc17->1\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->2,arc40->1+t,arc14->2 t,arc12->1+t,arc10->2,arc11->1,arc39->1+2 t,arc13->t,arc42->2,arc41->2+t,arc9->2,arc43->2,arc8->2,arc44->2,arc7->2,arc45->2,arc4->2,arc5->2,arc38->2 t,arc37->0,arc36->2,arc30->2,arc31->2,arc34->2,arc33->2,arc23->2,arc32->2,arc22->2,arc29->2,arc24->2,arc35->2,arc28->2,arc25->2,arc27->2,arc26->2,arc21->2,arc20->2,arc19->2,arc18->2,arc1->2,arc2->2,arc3->2,arc6->2,arc17->2\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->t,arc40->2+t,arc14->1+t,arc12->2+t,arc10->t,arc11->1+2 t,arc39->0,arc13->2 t,arc42->t,arc41->1,arc9->t,arc43->t,arc8->t,arc44->t,arc7->t,arc45->t,arc4->t,arc5->t,arc38->1+t,arc37->2,arc36->t,arc30->t,arc31->t,arc34->t,arc33->t,arc23->t,arc32->t,arc22->t,arc29->t,arc24->t,arc35->t,arc28->t,arc25->t,arc27->t,arc26->t,arc21->t,arc20->t,arc19->t,arc18->t,arc1->t,arc2->t,arc3->t,arc6->t,arc17->t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->2 t,arc40->1,arc14->2+t,arc12->1,arc10->2 t,arc11->0,arc39->2,arc13->1+t,arc42->2 t,arc41->1+2 t,arc9->2 t,arc43->2 t,arc8->2 t,arc44->2 t,arc7->2 t,arc45->2 t,arc4->2 t,arc5->2 t,arc38->2+t,arc37->t,arc36->2 t,arc30->2 t,arc31->2 t,arc34->2 t,arc33->2 t,arc23->2 t,arc32->2 t,arc22->2 t,arc29->2 t,arc24->2 t,arc35->2 t,arc28->2 t,arc25->2 t,arc27->2 t,arc26->2 t,arc21->2 t,arc20->2 t,arc19->2 t,arc18->2 t,arc1->2 t,arc2->2 t,arc3->2 t,arc6->2 t,arc17->2 t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->1+t,arc40->1+2 t,arc14->1,arc12->1+2 t,arc10->1+t,arc11->2,arc39->t,arc13->2+t,arc42->1+t,arc41->0,arc9->1+t,arc43->1+t,arc8->1+t,arc44->1+t,arc7->1+t,arc45->1+t,arc4->1+t,arc5->1+t,arc38->1,arc37->2 t,arc36->1+t,arc30->1+t,arc31->1+t,arc34->1+t,arc33->1+t,arc23->1+t,arc32->1+t,arc22->1+t,arc29->1+t,arc24->1+t,arc35->1+t,arc28->1+t,arc25->1+t,arc27->1+t,arc26->1+t,arc21->1+t,arc20->1+t,arc19->1+t,arc18->1+t,arc1->1+t,arc2->1+t,arc3->1+t,arc6->1+t,arc17->1+t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->2+t,arc40->0,arc14->1+2 t,arc12->0,arc10->2+t,arc11->t,arc39->2 t,arc13->1,arc42->2+t,arc41->2,arc9->2+t,arc43->2+t,arc8->2+t,arc44->2+t,arc7->2+t,arc45->2+t,arc4->2+t,arc5->2+t,arc38->1+2 t,arc37->1+t,arc36->2+t,arc30->2+t,arc31->2+t,arc34->2+t,arc33->2+t,arc23->2+t,arc32->2+t,arc22->2+t,arc29->2+t,arc24->2+t,arc35->2+t,arc28->2+t,arc25->2+t,arc27->2+t,arc26->2+t,arc21->2+t,arc20->2+t,arc19->2+t,arc18->2+t,arc1->2+t,arc2->2+t,arc3->2+t,arc6->2+t,arc17->2+t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->1+2 t,arc40->t,arc14->2,arc12->t,arc10->1+2 t,arc11->1+t,arc39->2+t,arc13->0,arc42->1+2 t,arc41->2 t,arc9->1+2 t,arc43->1+2 t,arc8->1+2 t,arc44->1+2 t,arc7->1+2 t,arc45->1+2 t,arc4->1+2 t,arc5->1+2 t,arc38->2,arc37->1,arc36->1+2 t,arc30->1+2 t,arc31->1+2 t,arc34->1+2 t,arc33->1+2 t,arc23->1+2 t,arc32->1+2 t,arc22->1+2 t,arc29->1+2 t,arc24->1+2 t,arc35->1+2 t,arc28->1+2 t,arc25->1+2 t,arc27->1+2 t,arc26->1+2 t,arc21->1+2 t,arc20->1+2 t,arc19->1+2 t,arc18->1+2 t,arc1->1+2 t,arc2->1+2 t,arc3->1+2 t,arc6->1+2 t,arc17->1+2 t\[RightAssociation],\[LeftAssociation]arc15->2+2 t,arc16->2+2 t,arc40->2+2 t,arc14->2+2 t,arc12->2+2 t,arc10->2+2 t,arc11->2+2 t,arc39->2+2 t,arc13->2+2 t,arc42->2+2 t,arc41->2+2 t,arc9->2+2 t,arc43->2+2 t,arc8->2+2 t,arc44->2+2 t,arc7->2+2 t,arc45->2+2 t,arc4->2+2 t,arc5->2+2 t,arc38->2+2 t,arc37->2+2 t,arc36->2+2 t,arc30->2+2 t,arc31->2+2 t,arc34->2+2 t,arc33->2+2 t,arc23->2+2 t,arc32->2+2 t,arc22->2+2 t,arc29->2+2 t,arc24->2+2 t,arc35->2+2 t,arc28->2+2 t,arc25->2+2 t,arc27->2+2 t,arc26->2+2 t,arc21->2+2 t,arc20->2+2 t,arc19->2+2 t,arc18->2+2 t,arc1->2+2 t,arc2->2+2 t,arc3->2+2 t,arc6->2+2 t,arc17->2+2 t\[RightAssociation]}
+
+In[936]:= 
+(*Calculation of the Boltzmann Weights and 2-Cocycle Invariant*)
+(*Function that calculates the Boltzmann Weights at a crossing with strands x and y*)
+boltz[a_,b_]:=(a-b)^3*b;
+(* Calculates the formal multiplication for a specific coloring configuration over all crossings *)
+formalMult=0;
+
+epsilon ={1,1,1,1,-1,1,1,-1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1}
+Do[ToExpression["crossing" <> ToString[i] <> "Boltz"<>" = 0"], {i, 1, 45}];
+
+stateSumList={};
+For[i=1,i<=Length[runningColoringTally],i=i+1,a1=runningColoringTally[[i]][arc1];a2=runningColoringTally[[i]][arc2];a3=runningColoringTally[[i]][arc3];a4=runningColoringTally[[i]][arc4];a5=runningColoringTally[[i]][arc5];a6=runningColoringTally[[i]][arc6];a7=runningColoringTally[[i]][arc7];a8=runningColoringTally[[i]][arc8];a9=runningColoringTally[[i]][arc9];a10=runningColoringTally[[i]][arc10];a11=runningColoringTally[[i]][arc11];a12=runningColoringTally[[i]][arc12];a13=runningColoringTally[[i]][arc13];a14=runningColoringTally[[i]][arc14];a15=runningColoringTally[[i]][arc15];a16=runningColoringTally[[i]][arc16];a17=runningColoringTally[[i]][arc17];a18=runningColoringTally[[i]][arc18];a19=runningColoringTally[[i]][arc19];a20=runningColoringTally[[i]][arc20];a21=runningColoringTally[[i]][arc21];a22=runningColoringTally[[i]][arc22];a23=runningColoringTally[[i]][arc23];a24=runningColoringTally[[i]][arc24];a25=runningColoringTally[[i]][arc25];a26=runningColoringTally[[i]][arc26];a27=runningColoringTally[[i]][arc27];a28=runningColoringTally[[i]][arc28];a29=runningColoringTally[[i]][arc29];a30=runningColoringTally[[i]][arc30];a31=runningColoringTally[[i]][arc31];a32=runningColoringTally[[i]][arc32];a33=runningColoringTally[[i]][arc33];a34=runningColoringTally[[i]][arc34];a35=runningColoringTally[[i]][arc35];a36=runningColoringTally[[i]][arc36];a37=runningColoringTally[[i]][arc37];a38=runningColoringTally[[i]][arc38];a39=runningColoringTally[[i]][arc39];a40=runningColoringTally[[i]][arc40];a41=runningColoringTally[[i]][arc41];a42=runningColoringTally[[i]][arc42];a43=runningColoringTally[[i]][arc43];a44=runningColoringTally[[i]][arc44];a45=runningColoringTally[[i]][arc45];
+crossing1Boltz=(epsilon[[1]])*boltz[crossTriples[[1,2]],crossTriples[[1,3]]];
+crossing2Boltz=(epsilon[[2]])*boltz[crossTriples[[2,2]],crossTriples[[2,3]]];
+crossing3Boltz=(epsilon[[3]])*boltz[crossTriples[[3,2]],crossTriples[[3,3]]];
+crossing4Boltz=(epsilon[[4]])*boltz[crossTriples[[4,2]],crossTriples[[4,3]]];
+crossing5Boltz=(epsilon[[5]])*boltz[crossTriples[[5,2]],crossTriples[[5,3]]];
+crossing6Boltz=(epsilon[[6]])*boltz[crossTriples[[6,2]],crossTriples[[6,3]]];
+crossing7Boltz=(epsilon[[7]])*boltz[crossTriples[[7,2]],crossTriples[[7,3]]];
+crossing8Boltz=(epsilon[[8]])*boltz[crossTriples[[8,2]],crossTriples[[8,3]]];
+crossing9Boltz=(epsilon[[9]])*boltz[crossTriples[[9,2]],crossTriples[[9,3]]];
+crossing10Boltz=(epsilon[[10]])*boltz[crossTriples[[10,2]],crossTriples[[10,3]]];
+crossing11Boltz=(epsilon[[11]])*boltz[crossTriples[[11,2]],crossTriples[[11,3]]];
+crossing12Boltz=(epsilon[[12]])*boltz[crossTriples[[12,2]],crossTriples[[12,3]]];
+crossing13Boltz=(epsilon[[13]])*boltz[crossTriples[[13,2]],crossTriples[[13,3]]];
+crossing14Boltz=(epsilon[[14]])*boltz[crossTriples[[14,2]],crossTriples[[14,3]]];
+crossing15Boltz=(epsilon[[15]])*boltz[crossTriples[[15,2]],crossTriples[[15,3]]];
+crossing16Boltz=(epsilon[[16]])*boltz[crossTriples[[16,2]],crossTriples[[16,3]]];
+crossing17Boltz=(epsilon[[17]])*boltz[crossTriples[[17,2]],crossTriples[[17,3]]];
+crossing18Boltz=(epsilon[[18]])*boltz[crossTriples[[18,2]],crossTriples[[18,3]]];
+crossing19Boltz=(epsilon[[19]])*boltz[crossTriples[[19,2]],crossTriples[[19,3]]];
+crossing20Boltz=(epsilon[[20]])*boltz[crossTriples[[20,2]],crossTriples[[20,3]]];
+crossing21Boltz=(epsilon[[21]])*boltz[crossTriples[[21,2]],crossTriples[[21,3]]];
+crossing22Boltz=(epsilon[[22]])*boltz[crossTriples[[22,2]],crossTriples[[22,3]]];
+crossing23Boltz=(epsilon[[23]])*boltz[crossTriples[[23,2]],crossTriples[[23,3]]];
+crossing24Boltz=(epsilon[[24]])*boltz[crossTriples[[24,2]],crossTriples[[24,3]]];
+crossing25Boltz=(epsilon[[25]])*boltz[crossTriples[[25,2]],crossTriples[[25,3]]];
+crossing26Boltz=(epsilon[[26]])*boltz[crossTriples[[26,2]],crossTriples[[26,3]]];
+crossing27Boltz=(epsilon[[27]])*boltz[crossTriples[[27,2]],crossTriples[[27,3]]];
+crossing28Boltz=(epsilon[[28]])*boltz[crossTriples[[28,2]],crossTriples[[28,3]]];
+crossing29Boltz=(epsilon[[29]])*boltz[crossTriples[[29,2]],crossTriples[[29,3]]];
+crossing30Boltz=(epsilon[[30]])*boltz[crossTriples[[30,2]],crossTriples[[30,3]]];
+crossing31Boltz=(epsilon[[31]])*boltz[crossTriples[[31,2]],crossTriples[[31,3]]];
+crossing32Boltz=(epsilon[[32]])*boltz[crossTriples[[32,2]],crossTriples[[32,3]]];
+crossing33Boltz=(epsilon[[33]])*boltz[crossTriples[[33,2]],crossTriples[[33,3]]];
+crossing34Boltz=(epsilon[[34]])*boltz[crossTriples[[34,2]],crossTriples[[34,3]]];
+crossing35Boltz=(epsilon[[35]])*boltz[crossTriples[[35,2]],crossTriples[[35,3]]];
+crossing36Boltz=(epsilon[[36]])*boltz[crossTriples[[36,2]],crossTriples[[36,3]]];
+crossing37Boltz=(epsilon[[37]])*boltz[crossTriples[[37,2]],crossTriples[[37,3]]];
+crossing38Boltz=(epsilon[[38]])*boltz[crossTriples[[38,2]],crossTriples[[38,3]]];
+crossing39Boltz=(epsilon[[39]])*boltz[crossTriples[[39,2]],crossTriples[[39,3]]];
+crossing40Boltz=(epsilon[[40]])*boltz[crossTriples[[40,2]],crossTriples[[40,3]]];
+crossing41Boltz=(epsilon[[41]])*boltz[crossTriples[[41,2]],crossTriples[[41,3]]];
+crossing42Boltz=(epsilon[[42]])*boltz[crossTriples[[42,2]],crossTriples[[42,3]]];
+crossing43Boltz=(epsilon[[43]])*boltz[crossTriples[[43,2]],crossTriples[[43,3]]];
+crossing44Boltz=(epsilon[[44]])*boltz[crossTriples[[44,2]],crossTriples[[44,3]]];
+crossing45Boltz=(epsilon[[45]])*boltz[crossTriples[[45,2]],crossTriples[[45,3]]];
+formalMult = PolynomialRemainder[crossing1Boltz+crossing2Boltz+crossing3Boltz+crossing4Boltz+crossing5Boltz+crossing6Boltz+crossing7Boltz+crossing8Boltz+crossing9Boltz+crossing10Boltz+crossing11Boltz+crossing12Boltz+crossing13Boltz+crossing14Boltz+crossing15Boltz+crossing16Boltz+crossing17Boltz+crossing18Boltz+crossing19Boltz+crossing20Boltz+crossing21Boltz+crossing22Boltz+crossing23Boltz+crossing24Boltz+crossing25Boltz+crossing26Boltz+crossing27Boltz+crossing28Boltz+crossing29Boltz+crossing30Boltz+crossing31Boltz+crossing32Boltz+crossing33Boltz+crossing34Boltz+crossing35Boltz+crossing36Boltz+crossing37Boltz+crossing38Boltz+crossing39Boltz+crossing40Boltz+crossing41Boltz+crossing42Boltz+crossing43Boltz+crossing44Boltz+crossing45Boltz,t^2+1,t,Modulus->3];
+stateSumList=AppendTo[stateSumList,formalMult];
+];
+"The Quandle 2-Cocycle Invariant"
+Print[stateSumList]
+
+colorCounts = Length[DeleteDuplicates[Values[#]]] & /@ runningColoringTally
+Counts[colorCounts]
+Print["t appears =", Count[stateSumList,t]]
+Print["0 appears =", Count[stateSumList,0]]
+Print["1 appears =", Count[stateSumList,1]]
+Print["2 appears =", Count[stateSumList,2]]
+Print["t+1 appears =", Count[stateSumList,t+1]]
+Print["t+2 appears =", Count[stateSumList,t+2]]
+Print["2t+1 appears =", Count[stateSumList,2t+1]]
+Print["2t+2 appears =", Count[stateSumList,2t+2]]
+Print["2t appears =", Count[stateSumList,2t]]
+
+Out[938]= {1,1,1,1,-1,1,1,-1,-1,1,1,1,1,1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1,1,1,1,-1,-1,1,1,-1,-1,1,-1,1,1,-1,1,-1,-1,1}
+
+Out[942]= The Quandle 2-Cocycle Invariant
+
+{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+
+Out[944]= {1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1,9,9,9,9,9,9,9,9,9,1}
+
+Out[945]= \[LeftAssociation]1->9,9->72\[RightAssociation]
+
+InterpretationBox[RowBox[{"\"t appears =\"", "\:f360", "0"}], SequenceForm["t appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"0 appears =\"", "\:f360", "81"}], SequenceForm["0 appears =", 81], Editable -> False]
+
+InterpretationBox[RowBox[{"\"1 appears =\"", "\:f360", "0"}], SequenceForm["1 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"2 appears =\"", "\:f360", "0"}], SequenceForm["2 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"t+1 appears =\"", "\:f360", "0"}], SequenceForm["t+1 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"t+2 appears =\"", "\:f360", "0"}], SequenceForm["t+2 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"2t+1 appears =\"", "\:f360", "0"}], SequenceForm["2t+1 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"2t+2 appears =\"", "\:f360", "0"}], SequenceForm["2t+2 appears =", 0], Editable -> False]
+
+InterpretationBox[RowBox[{"\"2t appears =\"", "\:f360", "0"}], SequenceForm["2t appears =", 0], Editable -> False] 
