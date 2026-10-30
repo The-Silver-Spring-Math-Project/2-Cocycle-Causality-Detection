@@ -1,0 +1,68 @@
+In[316]:= QuandleSet={0,1,2,t,2t,t+1,t+2,2t+1,2t+2}
+possibleColoringsAtCrossing=Tuples[QuandleSet,{3}]
+
+$RecursionLimit=100000;
+$OutputSizeLimit = 100000;
+(*Do[ToExpression[ "validColorings" <> ToString[i], InputForm, Function[x, x = {}] ], {i, 1, 45} ] *)
+Do[ToExpression["validColorings" <> ToString[i] <> " = {}"], {i, 1, 4}];
+
+crossTriples = {
+  {a1,a2,a3},{a4,a3,a2},{a3,a1,a1},{a3,a4,a4}
+};
+
+equation[a_,b_,c_]:=(a-t*b -(1-t)*c)
+
+arcRules = Table[
+   Symbol["a" <> ToString[i]] ->
+     Symbol["x" <> ToString[i]] +
+     t*Symbol["y" <> ToString[i]],
+   {i, 1, 4}
+];
+
+equations=(equation @@@ crossTriples) /. arcRules;
+
+equations=PolynomialRemainder[Expand[#],t^2+1,t,Modulus->3] & /@ equations;
+
+scalarEquations = Flatten[
+   ({Coefficient[#, t, 0],
+      Coefficient[#, t, 1]} & /@ equations)
+];
+
+variables={x1,y1,x2,y2,x3,y3,x4,y4}
+
+nullityMatrix = Normal[CoefficientArrays[scalarEquations, variables][[2]]];
+
+nullityMatrix=Mod[nullityMatrix,3];
+
+RREFnullityMatrix=RowReduce[nullityMatrix, Modulus->3];
+
+Rank=MatrixRank[RREFnullityMatrix, Modulus ->3];
+
+nullity=Length[variables]-Rank
+
+coefficientSum=3^nullity
+
+Print[MatrixForm[nullityMatrix]];
+
+Print[nullity];
+Print[coefficientSum];
+
+Print[Dimensions[nullityMatrix]];
+
+Out[316]= {0,1,2,t,2 t,1+t,2+t,1+2 t,2+2 t}
+
+Out[317]= TemplateBox[Association["shortenedBoxes" -> TagBox[RowBox[{"{", RowBox[{RowBox[{"{", RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "0", ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{"0", ",", "1", ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", TemplateBox[{"698"}, "OutputSizeLimit`Skeleton"], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "0"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "1"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "2"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", "t"}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", " ", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", "t"}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"1", "+", RowBox[{"2", " ", "t"}]}]}], "}"}], ",", RowBox[{"{", RowBox[{RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}], ",", RowBox[{"2", "+", RowBox[{"2", " ", "t"}]}]}], "}"}]}], "}"}], Function[Short[Slot[1], 8]]], "line" -> 317, "sessionID" -> 18713900673902221342, "byteCount" -> 186680, "size" -> 8, "stored" -> False, "expr" -> Missing["NotAvailable", "NewSessionID"], "wrap" -> OutputSizeLimit`Defer, "version" -> 1], "OutputSizeLimitTemplate"]
+
+Out[327]= {x1,y1,x2,y2,x3,y3,x4,y4}
+
+Out[332]= 2
+
+Out[333]= 9
+
+TagBox[RowBox[{"(", "\:2060", GridBox[{{ItemBox["1"], ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["2"], ItemBox["2"], ItemBox["0"], ItemBox["0"]}, {ItemBox["0"], ItemBox["1"], ItemBox["2"], ItemBox["0"], ItemBox["1"], ItemBox["2"], ItemBox["0"], ItemBox["0"]}, {ItemBox["0"], ItemBox["0"], ItemBox["2"], ItemBox["2"], ItemBox["0"], ItemBox["1"], ItemBox["1"], ItemBox["0"]}, {ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["2"], ItemBox["2"], ItemBox["0"], ItemBox["0"], ItemBox["1"]}, {ItemBox["2"], ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["0"], ItemBox["0"], ItemBox["0"]}, {ItemBox["0"], ItemBox["2"], ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["0"], ItemBox["0"]}, {ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["0"], ItemBox["2"], ItemBox["0"]}, {ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["0"], ItemBox["1"], ItemBox["0"], ItemBox["2"]}}, RowSpacings -> 1, ColumnSpacings -> 1, RowAlignments -> Baseline, ColumnAlignments -> Center], "\:2060", ")"}], Function[BoxForm`e$, MatrixForm[BoxForm`e$]]]
+
+2
+
+9
+
+{8,8}
